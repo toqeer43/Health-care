@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0b1326;
+  --color-surface: #0b1326;
+  --color-surface-dim: #0b1326;
+  --color-surface-bright: #31394d;
+  --color-surface-container-lowest: #060e20;
+  --color-surface-container-low: #131b2e;
+  --color-surface-container: #171f33;
+  --color-surface-container-high: #222a3d;
+  --color-surface-container-highest: #2d3449;
+  --color-surface-variant: #2d3449;
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #bbcabf;
+  --color-inverse-surface: #dae2fd;
+  --color-inverse-on-surface: #283044;
+  --color-outline: #86948a;
+  --color-outline-variant: #3c4a42;
+  --color-surface-tint: #4edea3;
+  --color-primary: #4edea3;
+  --color-on-primary: #003824;
+  --color-primary-container: #10b981;
+  --color-on-primary-container: #00422b;
+  --color-primary-fixed: #6ffbbe;
+  --color-primary-fixed-dim: #4edea3;
+  --color-on-primary-fixed: #002113;
+  --color-on-primary-fixed-variant: #005236;
+  --color-secondary: #4fdbc8;
+  --color-on-secondary: #003731;
+  --color-secondary-container: #04b4a2;
+  --color-on-secondary-container: #003f38;
+  --color-secondary-fixed: #71f8e4;
+  --color-secondary-fixed-dim: #4fdbc8;
+  --color-on-secondary-fixed: #00201c;
+  --color-tertiary: #91db2a;
+  --color-on-tertiary: #1f3700;
+  --color-tertiary-container: #72b400;
+  --color-on-tertiary-container: #254000;
+  --color-tertiary-fixed: #acf847;
+  --color-tertiary-fixed-dim: #91db2a;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --font-headline-xl: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-title-md: "Plus Jakarta Sans", sans-serif;
+  --font-metric-value-lg: "Plus Jakarta Sans", sans-serif;
+  --font-metric-value-md: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-gutter: 1.5rem;
+}
+
+/* Typography Helpers */
+.font-display-hero { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 56px; line-height: 64px; letter-spacing: -0.03em; }
+.font-headline-xl { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 40px; line-height: 48px; letter-spacing: -0.02em; }
+.font-headline-lg { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 32px; line-height: 40px; letter-spacing: -0.02em; }
+.font-headline-md { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 600; font-size: 24px; line-height: 32px; letter-spacing: -0.015em; }
+.font-headline-sm { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 28px; letter-spacing: -0.01em; }
+.font-title-md { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0; }
+.font-metric-value-lg { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 32px; line-height: 36px; letter-spacing: -0.02em; }
+.font-metric-value-md { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 20px; line-height: 24px; letter-spacing: -0.01em; }
+
+.font-body-lg { font-family: "Inter", sans-serif; font-size: 16px; line-height: 26px; letter-spacing: -0.01em; }
+.font-body-md { font-family: "Inter", sans-serif; font-size: 14px; line-height: 22px; letter-spacing: -0.005em; }
+.font-body-sm { font-family: "Inter", sans-serif; font-size: 12px; line-height: 18px; letter-spacing: 0; }
+.font-label-md { font-family: "Inter", sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; letter-spacing: 0.04em; }
+.font-label-sm { font-family: "Inter", sans-serif; font-weight: 700; font-size: 10px; line-height: 14px; letter-spacing: 0.06em; }
+
+.text-display-hero { font-size: 56px; line-height: 64px; letter-spacing: -0.03em; }
+.text-headline-xl { font-size: 40px; line-height: 48px; letter-spacing: -0.02em; }
+.text-headline-lg { font-size: 32px; line-height: 40px; letter-spacing: -0.02em; }
+.text-headline-md { font-size: 24px; line-height: 32px; letter-spacing: -0.015em; }
+.text-headline-sm { font-size: 20px; line-height: 28px; letter-spacing: -0.01em; }
+.text-title-md { font-size: 16px; line-height: 24px; letter-spacing: 0; }
+.text-metric-value-lg { font-size: 32px; line-height: 36px; letter-spacing: -0.02em; }
+.text-metric-value-md { font-size: 20px; line-height: 24px; letter-spacing: -0.01em; }
+.text-body-lg { font-size: 16px; line-height: 26px; }
+.text-body-md { font-size: 14px; line-height: 22px; }
+.text-body-sm { font-size: 12px; line-height: 18px; }
+.text-label-md { font-size: 12px; line-height: 16px; }
+.text-label-sm { font-size: 10px; line-height: 14px; }
+
+/* Custom Scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
